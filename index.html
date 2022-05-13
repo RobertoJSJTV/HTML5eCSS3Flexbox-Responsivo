@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Meu Portifólio</title>
 </head>
@@ -13,11 +16,11 @@
 
     <!-- Navbar -->
 
-    <header>
+    <header id="navbar">
         <img src="img/shuriken.png" alt="Logo da Página">
         <h2>Roberto josé da Silva Júnior</h2>
         <nav>
-            <ul id="navbar-ist">
+            <ul id="navbar-list">
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Projetos</a></li>
                 <li><a href="#">Contatos</a></li>
@@ -27,15 +30,81 @@
     <!-- fim Navbar -->
     <!-- Banner Início -->
     <main>
-        <div id="banner-info">
+        <div id="main-banner">
             <div id="banner-info">
                 <h1>Olá, eu sou Roberto josé</h1>
                 <img src="img/ninja.png" alt="Perfil ninja">
                 <p>O grande programador</p>
             </div>
         </div>
+        <!-- Fim do Banner-->
+        <!-- about inicio -->
+        <section id="about-section">
+            <h2>Sobre o meu jeito ninja de ser</h2>
+            <p>Sou um cara que tem muito carinho pelo Front-End, meu primeiro contato com criação de sites foi quando eu era pequeno, fiz meu primeiro site no wix,
+                e de lá pra ca eu vim estudando mais sobre essa parte, e hoje essa é a area que eu mais me interesso.
+                link para o meu site no wix, que nunca foi terminado: <a href="https://minecraftzikabrpt.wixsite.com/rwx-games" target="_blank">Clique aqui</a>
+            </p>
+        </section>
+        <!-- about fim -->
     </main>
-    <!-- Fim do Banner-->
+    <!-- Skills inicio -->
+    <section id="skills-section">
+        <div class="container">
+            <div class="skills-container">
+                <img src="img/weapon1.png" alt="weapons">
+                <h3>Desenvolvimento</h3>
+                <p>Minha maior paixão é desenvolver projetos web</p>
+                <p class="subtitle">Linguagens que utilizo:</p>
+                <p>HTML, CSS, PHP e JAVA</p>
+                <p class="subtitle">Projetos que posso desenvolver</p>
+                <p>sites pessoais, blogs e notícias</p>
+            </div>
+            <div class="skills-container central">
+                <img src="img/weapon2.png" alt="weapons">
+                <h3>Criação</h3>
+                <p>Atuo em Front-End</p>
+                <p class="subtitle">Meus conhecimentos:</p>
+                <p>HTML, CSS, JavaScript e futuramente ReactJS</p>
+            </div>
+            <div class="skills-container">
+                <img src="img/weapon3.png" alt="weapons">
+                <h3>Infraestrutura</h3>
+                <p>Posso mensurar seus servidores, deixando o projeto mais perfomático</p>
+                <p class="subtitle">Serviços de Cloud:</p>
+                <p>MySQL, aws</p>
+                <p class="subtitle">O que posso fazer:</p>
+                <p>Clusters, servidores de CDN, diminuir o tempo de requisição</p>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Fim -->
+    <!-- Jobs inicio-->
+    <section id="jobs-section">
+        <h2>Veja meus últimos trabalhos:</h2>
+        <p>Aqui estão meus trabalhos mais recentes, para ver todos <a href="https://github.com/RobertoJSJTV">Clique aqui</a></p>
+        <div class="job-container">
+            <div class="job-box proj1"></div>
+            <div class="job-box proj2"></div>
+            <div class="job-box proj3"></div>
+        </div>
+    </section>
+    <!-- Jobs Fim -->
+    <!-- footer inicio-->
+    <footer>
+        <h2>Me mande uma Mensagem</h2>
+        <p>Caso queira falar sobre algum projeto, me contratar para algum serviço</p>
+        <img src="img/ninja.png" alt="Perfil ninja">
+        <form action="" method="">
+            <input type="text" name="name" placeholder="Seu nome">
+            <input type="text" name="email" placeholder="Seu email">
+            <textarea name="msg" placeholder="Digite uma mensagem"></textarea>
+            <input type="submit" value="enviar">
+        </form>
+        <p>Desenvolvido por <span class="detail">Roberto josé</span></p>
+    </footer>
+    <!-- Footer fim-->
+
 </body>
 
 </html>
